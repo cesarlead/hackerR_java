@@ -1,7 +1,7 @@
-package fundamentals_of_language.solucion_con_strategy;
+package patterd.solucion_con_strategy;
 
-import com.cesarlead.hr.fundamentals_of_language.solucion_con_strategy.DiscountStrategy;
-import com.cesarlead.hr.fundamentals_of_language.solucion_con_strategy.FixedDiscount;
+import com.cesarlead.hr.patterd.strategy.solucion_con_strategy.DiscountStrategy;
+import com.cesarlead.hr.patterd.strategy.solucion_con_strategy.FixedDiscount;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

@@ -1,4 +1,4 @@
-package com.cesarlead.hr.fundamentals_of_language.solucion_con_strategy;
+package com.cesarlead.hr.patterd.strategy.solucion_con_strategy;
 
 public class PercentageDiscount implements DiscountStrategy {
 
