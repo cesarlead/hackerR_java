@@ -1,5 +1,8 @@
 package com.cesarlead.hr.exercises;
 
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
+
 // timeConversion
 public class Exercise03 {
 
@@ -22,10 +25,20 @@ public class Exercise03 {
 
     }
 
+    // timeConversion
+
+    public String timeConversion2(String timeString) {
+        DateTimeFormatter inFormatter = DateTimeFormatter.ofPattern("hh:mm:ssa");
+        DateTimeFormatter outFormatter = DateTimeFormatter.ofPattern("HH:mm:ss");
+        LocalTime time = LocalTime.parse(timeString, inFormatter);
+        return outFormatter.format(time);
+    }
+
 
     public static void main(String[] args) {
 
         System.out.println(new Exercise03().timeConversion("07:05:45PM"));
 
+        System.out.println(new Exercise03().timeConversion2("12:05:45PM"));
     }
 }
