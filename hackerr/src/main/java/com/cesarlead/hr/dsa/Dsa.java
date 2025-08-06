@@ -162,6 +162,23 @@ public class Dsa {
 
     }
 
+    // Enunciado: Dado un arreglo ordenado nums, elimina los duplicados in-place de tal manera que cada elemento único aparezca solo una vez. Devuelve la nueva longitud del arreglo.
+    static int removeDuplicatesOrderedArray(int[] arr) {
+        Objects.requireNonNull(arr, "arr cannot be null");
+
+        int len = arr.length;
+        int currentInsert = 0;
+
+        for (int j = 0; j < len; j++) {
+            if (arr[currentInsert] != arr[j]) {
+                currentInsert++;
+                arr[currentInsert] = arr[j];
+            }
+        }
+
+        return currentInsert + 1;
+    }
+
 
     public static void main(String[] args) {
 
